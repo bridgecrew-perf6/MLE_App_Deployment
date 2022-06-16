@@ -45,10 +45,9 @@ def fit_model(model, train_data, valid_data, weights, batch=2048, epoch=30):
     history = model.fit(x=train_data, validation_data=valid_data, verbose=0,
     class_weight=weights, batch_size=batch, epochs=epoch)
     logging.info("The model has been trained.")
-    # Change file directory path to your working directory
-    model.save('D:\MLE Capstone Project\Data\Model')
+    model.save('./Model')
     logging.info("The model has been saved.")
-    pickle.dump(model, open('DL_model.pkl', 'wb'))
+    pickle.dump(model, open('./Model/DL_model.pkl', 'wb'))
     logging.info("The model has been pickled.")
     hist_df = pd.DataFrame(history.history)
     with open('Training_History.csv', mode='w') as f:
