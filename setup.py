@@ -30,7 +30,5 @@ setup(
         'numpy>=1.22.3',
         'tensorflow>=2.9.1',
         'keras>=2.4.3',
-        'streamlit>=1.9.2',
-        'matplotlib>=3.5.2'
     ],
 )
