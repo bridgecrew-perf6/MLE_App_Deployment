@@ -7,6 +7,8 @@ A DNN model was fit to the training data and yielded binary classification metri
 
 https://share.streamlit.io/nateccarnes/mle_app_deployment/main/web_app.py
 
+To use the web app, first follow the link provided above. You can enter patient information on the left-hand-side of the screen (such as their primary diagnosis) using the drop-down menus, and the web app will automatically make a prediction about the likelihood of readmission.
+
 # Instructions
 
 If you clone and download this repository and install the dependencies listed in requirements.txt, you can conduct the data analysis pipeline end-to-end with logging (permitting that you have data) by running the Script.py file. The Model folder contains the saved DNN model for making predictions with your own data (but note that it will need to be aggregated, reduce, and cleaned first). You can also host the web app locally by running the web_app.py file using streamlit.
