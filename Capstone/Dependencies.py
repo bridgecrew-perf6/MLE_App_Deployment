@@ -21,10 +21,10 @@ def make_dependencies(valid_df, test_df, valid_yhat, test_yhat):
         var_mode = app_df[header].mode()[0]
         central_tendency[header] = var_mode
     
-    f = open("defaults.txt","w")
+    f = open("./Dependencies/defaults.txt","w")
     f.write(str(central_tendency))
     f.close()
 
     app_df_short = app_df[['Primary_dx','Prob']]
     # Change file directory path to your working directory
-    app_df_short.to_csv('D:\MLE Capstone Project\Data\app_data.csv', index=False)
+    app_df_short.to_csv('./Dependencies/app_data.csv', index=False)
