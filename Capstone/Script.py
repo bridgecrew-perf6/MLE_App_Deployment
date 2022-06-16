@@ -7,7 +7,7 @@ logging.basicConfig(filename='DL_Log',
                     datefmt='%H:%M:%S',
                     level=logging.INFO)
 
-file = "D:\MLE Capstone Project\Data\DL_data_prepared_multigroup.csv"""
+file = ".\Data\Capstone_Data_Prepared.csv"
 train, valid, test, weights, bias = Prepare.prepare_data(file)
 inputs, layers, train_ds, valid_ds, test_ds = Preprocess.preprocess_data(train, valid, test)
 model = Train.make_model(inputs, layers, output_bias=bias)
